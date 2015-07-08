@@ -188,7 +188,7 @@ func (z zipper) Find(metric string) (pb.GlobResponse, error) {
 
 	u.RawQuery = url.Values{
 		"query":  []string{metric},
-		"format": []string{"protobuf"},
+		"format": []string{"json"},
 	}.Encode()
 
 	var pbresp pb.GlobResponse
